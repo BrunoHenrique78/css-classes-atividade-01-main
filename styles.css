@@ -1,0 +1,44 @@
+.container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: green; /* cor de fundo */
+    color: wheat; /* cor geral dos textos */
+}
+
+.cabecalho {
+    background-color: #3498db;
+    text-align: center; /* centraliza tudo */
+}
+
+/* título principal (primeiro p) */
+.cabecalho p:first-child {
+    color: red;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/* subtítulo (segundo p) */
+.cabecalho p:last-child {
+    color: purple;
+}
+
+.conteudo {
+    background-color: #f1f1f1; /* cor de fundo */
+    color: blue; /* cor aplicada direto na div para todos os itens*/
+}
+
+.conteudo p {
+    color: #E4005A;
+    font-size: 42px;
+}
+
+.conteudo p:nth-of-type(4) {
+    color: purple;
+    vertical-align: sub;
+}
+
+@media (max-width: 480px) {
+    .container {
+        background-color: lightblue;
+    }
+}
